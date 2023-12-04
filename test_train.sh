@@ -1,8 +1,8 @@
 #!/bin/bash
 
-datasets=("seg" "detr" "centernet")
-feature_extractors=("CNN" "PANNs" "LSTM" "Spec" "QLSTM")
-models=("Spec2DCNN" "Spec1D" "DETR2DCNN" "CenterNet")
+datasets=("seg" "centernet")
+feature_extractors=("CNN" "PANNs" "LSTM")
+models=("Spec2DCNN" "Spec1D" "CenterNet")
 decoders=("UNet1DDecoder" "LSTMDecoder" "TransformerDecoder" "MLPDecoder")
 
 env="colab"
@@ -13,7 +13,7 @@ distance=60
 score_th=0.005
 
 feature_args="anglez,enmo,hour_sin,hour_cos,anglez_diff,enmo_diff"
-epochs=1
+epochs=50
 
 # Loop through each combination of configurations
 for dataset in "${datasets[@]}"; do
