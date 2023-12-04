@@ -21,7 +21,7 @@ for dataset in "${datasets[@]}"; do
         for model in "${models[@]}"; do
             for decoder in "${decoders[@]}"; do
                 # Call your Python script with the current configuration
-                echo "python3 main.py \"train\" 0 1 $dataset $feature_extractor $model $decoder $env $num_workers $downsample_rate $batch_size $distance $score_th $feature_args $epochs"
+                echo "python3 main.py \"train\" 0 1 $dataset $feature_extractor $model $decoder $env $num_workers $downsample_rate $batch_size $distance $score_th $feature_args $epochs 1"
                 python3 main.py "train" 0 1 $dataset $feature_extractor $model $decoder $env $num_workers $downsample_rate $batch_size $distance $score_th $feature_args $epochs
             done
         done
