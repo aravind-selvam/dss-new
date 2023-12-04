@@ -1,7 +1,7 @@
 #!/bin/bash
 
 datasets=("seg" "detr" "centernet")
-feature_extractors=("CNN" "PANNs" "LSTM" "Spec")
+feature_extractors=("CNN" "PANNs" "LSTM" "Spec" "QLSTM")
 models=("Spec2DCNN" "Spec1D" "DETR2DCNN" "CenterNet")
 decoders=("UNet1DDecoder" "LSTMDecoder" "TransformerDecoder" "MLPDecoder")
 
