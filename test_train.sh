@@ -5,12 +5,12 @@ feature_extractors=("CNN" "PANNs" "LSTM" "Spec")
 models=("Spec2DCNN" "Spec1D" "DETR2DCNN" "CenterNet")
 decoders=("UNet1DDecoder" "LSTMDecoder" "TransformerDecoder" "MLPDecoder")
 
-env="local"
-num_workers=2
+env="colab"
+num_workers=8
 downsample_rate=2
 batch_size=32
-distance=40
-score_th=0.05
+distance=60
+score_th=0.005
 
 feature_args="anglez,enmo,hour_sin,hour_cos,anglez_diff,enmo_diff"
 epochs=1
