@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 
 import pennylane as qml
+
 # https://github.com/rdisipio/qlstm/blob/main/qlstm_pennylane.py
 
 class QLSTM(nn.Module):

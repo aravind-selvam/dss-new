@@ -277,6 +277,7 @@ valid_series_ids =[
   "f56824b503a0",
   "f7eb179216c2",
   "fbf33b1a2c10",
+  "fe90110788d2",
 ]
 
 new_valid_series_ids =[
